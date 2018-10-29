@@ -2,8 +2,8 @@
 <html land="en">
 <head>
 		<title>Ingrid Biederman's Portfolio</title>	
-		<link rel="stylesheet" type="text/css" href="../layout.css">
-		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link rel="stylesheet" type="text/css" href="./hobby-layout.css">
+		<link rel="stylesheet" type="text/css" href="./hobby-style.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 		<meta charset="viewport">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,71 +11,91 @@
 </head>
 <body >
 	<div class="backdrop">
+		<div class="modal">
+            <h1>Get in Touch</h1>
+            <p>Contact me to find out more about my exciting trips!</p>
+            <a href="contact/index.html"><button>Contact</button></a>
+        </div>
 	<header>
-		<div class="navbar">
-			<nav>
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="./about-me.html">About Me</a></li>
-					<li><a href="./section-projects.html">Projects</a></li>
-					<li><a href="./skills.html">Skills</a></li>
-					<li><a href="./contact.html">Contact</a></li>
-					<li><a href="./hobbies.html">Hobbies</a></li> 
-				</ul>
-			</nav>
+		<div class="navbar" id="myNavbar">
+			<a href="../index.html">Home</a>
+			<a href="./about-me.html">About Me</a>
+			<a href="./section-projects.html">Projects</a>
+			<a href="./skills.html">Skills</a>
+			<a href="./contact.html">Contact</a>
+			<a href="./hobbies.html" class="active">Additional Interests</a>
 		</div>
 		<h1>Additional Interests</h1>
 	</header>
-	
-	<main>
+	     <main>
 		<div class="modal-container">	
-	 		<div class="fencing">FENCING
+	 		<div class="fencing">
+	 			<h2>FENCING</h2>
 	 			<img src="../images/referee.jpg">
 	 			<img src="../images/fencing.jpg">
-	 			<p>I've been fencing since January of 2004, inspired to recreate the Cliffs of Insanity dueling scene from The Princess Bride for my high school theater class. I enjoyed it so much I started coaching and officiating the next year, and have been in the fencing community ever since.  I'm sort of like an Inigo-Wesley smoothie...without the actual killing, of course.</p>
+	 			<p>I've been fencing since January of 2004, inspired to recreate the Cliffs of Insanity dueling scene from The Princess Bride for my high school theater class. I enjoyed it so much I started coaching and officiating the next year, and have been in the fencing community ever since.</p>
 	 		</div>
 
-	 		<div class="climbing">CLIMBING
+	 		<div class="climbing">
+	 			<h2>CLIMBING</h2>
 	 			<img src="../images/climbing.jpg">
 	 			<img src="../images/bouldering.jpg">
 	 			<p>Started rock climbing as "training" for a Tough Mudder in 2013.  Had so much fun I never stopped and started teaching technique to climbers in our Meetup group. </p>
 	 		</div>
 
-	 		<div class="painting">PAINTING
+	 		<div class="painting">
+	 			<h2>PAINTING</h2>
 	 			<div class="paintings">
 	 				<img id="butterfly" src="../images/Butterfly.JPG">
-	 				<img id="carina" src="../images/Carina.JPG">
-	 				<img id="eagle" src="../images/Eagle.JPG">
-	 				<img id="horsehead" src="../images/Horsehead.JPG">
+	 				<button id="myBtn">Open Gallery</button>
+	 				<div id="myModal" class="modal">
+		 				  <div class="modal-content">
+			 				<img id="butterfly" src="../images/Butterfly.JPG">
+			 				<img id="carina" src="../images/Carina.JPG">
+			 				<img id="eagle" src="../images/Eagle.JPG">
+			 				<img id="horsehead" src="../images/Horsehead.JPG">
+			 				<img src="../images/yosemite.jpg">
+			 				<img src="../images/cart.jpg">
+			 				<img src="../images/sunrise.jpg">
+			 				<span class="close">&times;</span>
+						    <p>All paintings done in acrylic on canvas.</p>
+						  </div>
+	 				</div>
 	 				<p>Painting became way to relax after long teaching days in Germany.  Now it's a way to relax after long days of coding.</p>
 	 			</div>
 	 		</div>
 
-	 		<div class="scuba">SCUBA
+	 		<div class="scuba">
+	 			<h2>SCUBA</h2>
 	 				<img src="../images/scuba.jpg">
 	 				<p>Newest of my adventure sports, SCUBA has always been on my bucket list and I finally found a buddy willing to try it with me.  I can now explore every corner of the reachable earth!</p>
 	 		</div>
 
-	 		<div class="cooking">COOKING
+	 		<div class="cooking">
+	 			<h2>COOKING</h2>
 	 			<img src="../images/cooking.jpg">
 	 			<p>What started as an act of despration and refusal to eat another steak hockey puck, I taught myself to cook. Cooking allows me to be the closest thing to the mad scientist my inner child always wanted to be.</p>
 	 		</div>
 
-	 		<div class="outdoors">OUTDOORS and TRAVEL
+	 		<div class="outdoors">
+	 			<h2>OUTDOORS and TRAVEL</h2>
 	 			<div class="travel">
 		 			<img id="states" src="../images/States.JPG">
 		 			<img id="countries" src="../images/Countries.JPG">
+		 			<img src="../images/hiking.jpg">
+		 			<img src="../images/hiking-ireland.jpg">
 		 			<p>Hiking, camping, backpacking, summiting peaks, I love it all!</p>
 	 			</div>
 	 		</div>
 
-	 		<div class="archery">ARCHERY
+	 		<div class="archery">
+	 			<h2>ARCHERY</h2>
 	 				<img src="../images/archery.jpg">
 	 				 <p>Archery seemed like the natural progression after fencing.</p>
 	 		</div>
-
 	 	</div>	
 	 </main>
+	
 	
 
 <footer>
@@ -83,29 +103,35 @@
 </footer>
 
 	</div>
+<script>
+	// Get the modal
+var modal = document.getElementById('myModal');
 
-	<script>
-	var paintingImgs = document.querySelectorAll('.paintings');
-	var backdrop = document.querySelector('.backdrop');
-	var modal = document.querySelector('.modal-container');
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-	function openModal () {
-		backdrop.style.display = 'block';
-		modal.style.display = 'block';
-	}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-	function closeModal () {
-		backdrop.style.display = 'none';
-		modal.style.display = 'none';
-	}
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
 
-	for(i = 0; i < paintingImgs.length; i++) {
-		paintingImgs[i].addEventListener('click', openModal);
-	}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
 
-	backdrop.addEventListener('click', closeModal);
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 </script>
+
 
 </body>
 </html>

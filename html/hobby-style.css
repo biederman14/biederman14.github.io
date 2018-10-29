@@ -1,0 +1,22 @@
+body {
+	background-color: #303F2F;
+	background-image: url("../images/TopLake.jpg");
+	font-family: Quicksand;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+p {
+	background-color: #fdfef9;
+}
+
+h1 {
+	background-color: #fdfef9;
+}
+
+h2 {
+	background-color: #fdfef9;
+}
+
+
