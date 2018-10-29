@@ -15,3 +15,19 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+//Collapseable Button
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var myBio = this.nextElementSibling;
+    if (myBio.style.display === "block") {
+      myBio.style.display = "none";
+    } else {
+      myBio.style.display = "block";
+    }
+  });
+}
