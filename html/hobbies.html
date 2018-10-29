@@ -10,6 +10,7 @@
 
 </head>
 <body >
+	<div class="backdrop">
 	<header>
 		<div class="navbar">
 			<nav>
@@ -23,60 +24,54 @@
 				</ul>
 			</nav>
 		</div>
-		<h1>Hobbies</h1>
+		<h1>Additional Interests</h1>
 	</header>
 	
 	<main>
-		<div class="container">	
-	 		<div id="fencing">
-	 			<!-- Trigger/Open The Modal -->
-				<button id="myBtn">FENCING</button>
-
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-
-				  <!-- Modal content -->
-				  <div class="modal-content">
-				    <span class="close">&times;</span>
-				    <p>I've been fencing since January of 2004, inspired to recreate the Cliffs of Insanity dueling scene from The Princess Bride for my high school theater class. I enjoyed it so much I started coaching and officiating the next year, and have been in the fencing community ever since.  I'm sort of like an Inigo-Wesley smoothie...without the actual killing, of course.</p>
-				  </div>
-				</div>
+		<div class="modal-container">	
+	 		<div class="fencing">FENCING
+	 			<img src="../images/referee.jpg">
+	 			<img src="../images/fencing.jpg">
+	 			<p>I've been fencing since January of 2004, inspired to recreate the Cliffs of Insanity dueling scene from The Princess Bride for my high school theater class. I enjoyed it so much I started coaching and officiating the next year, and have been in the fencing community ever since.  I'm sort of like an Inigo-Wesley smoothie...without the actual killing, of course.</p>
 	 		</div>
 
-	 		<div id="rock-climbing">
-	 			<!-- Trigger/Open The Modal -->
-				<button id="myBtn">ROCK CLIMBING</button>
-
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-
-				  <!-- Modal content -->
-				  <div class="modal-content">
-				    <span class="close">&times;</span>
-				    <p>Some text in the Modal..</p>
-				  </div>
-
-				</div>
+	 		<div class="climbing">CLIMBING
+	 			<img src="../images/climbing.jpg">
+	 			<img src="../images/bouldering.jpg">
+	 			<p>Started rock climbing as "training" for a Tough Mudder in 2013.  Had so much fun I never stopped and started teaching technique to climbers in our Meetup group. </p>
 	 		</div>
 
-	 		<div id="painting">
-	 			
+	 		<div class="painting">PAINTING
+	 			<div class="paintings">
+	 				<img id="butterfly" src="../images/Butterfly.JPG">
+	 				<img id="carina" src="../images/Carina.JPG">
+	 				<img id="eagle" src="../images/Eagle.JPG">
+	 				<img id="horsehead" src="../images/Horsehead.JPG">
+	 				<p>Painting became way to relax after long teaching days in Germany.  Now it's a way to relax after long days of coding.</p>
+	 			</div>
 	 		</div>
 
-	 		<div id="scuba">
-	 			
+	 		<div class="scuba">SCUBA
+	 				<img src="../images/scuba.jpg">
+	 				<p>Newest of my adventure sports, SCUBA has always been on my bucket list and I finally found a buddy willing to try it with me.  I can now explore every corner of the reachable earth!</p>
 	 		</div>
 
-	 		<div id="general-outdoors">
-	 			
+	 		<div class="cooking">COOKING
+	 			<img src="../images/cooking.jpg">
+	 			<p>What started as an act of despration and refusal to eat another steak hockey puck, I taught myself to cook. Cooking allows me to be the closest thing to the mad scientist my inner child always wanted to be.</p>
 	 		</div>
 
-	 		<div id="cooking">
-	 			
+	 		<div class="outdoors">OUTDOORS and TRAVEL
+	 			<div class="travel">
+		 			<img id="states" src="../images/States.JPG">
+		 			<img id="countries" src="../images/Countries.JPG">
+		 			<p>Hiking, camping, backpacking, summiting peaks, I love it all!</p>
+	 			</div>
 	 		</div>
 
-	 		<div id="teaching">
-	 			
+	 		<div class="archery">ARCHERY
+	 				<img src="../images/archery.jpg">
+	 				 <p>Archery seemed like the natural progression after fencing.</p>
 	 		</div>
 
 	 	</div>	
@@ -86,5 +81,31 @@
 <footer>
 	<small>© 2018</small>
 </footer>
+
+	</div>
+
+	<script>
+	var paintingImgs = document.querySelectorAll('.paintings');
+	var backdrop = document.querySelector('.backdrop');
+	var modal = document.querySelector('.modal-container');
+
+	function openModal () {
+		backdrop.style.display = 'block';
+		modal.style.display = 'block';
+	}
+
+	function closeModal () {
+		backdrop.style.display = 'none';
+		modal.style.display = 'none';
+	}
+
+	for(i = 0; i < paintingImgs.length; i++) {
+		paintingImgs[i].addEventListener('click', openModal);
+	}
+
+	backdrop.addEventListener('click', closeModal);
+
+</script>
+
 </body>
 </html>
