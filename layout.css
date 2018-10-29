@@ -1,6 +1,5 @@
 * {
   box-sizing:border-box
-  text-decoration: none;
 }
 
 body {  
@@ -29,6 +28,8 @@ header {
   grid-template-columns;
   justify-content: center;
 }
+
+/*SLIDESHOW STUFF*/
 
 /* Slideshow container */
 .slideshow-container {
@@ -121,3 +122,47 @@ header {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+/*HOBBIES*/
+.modal-container img {
+  max-height: 30%;
+  max-width: 30%;
+}
+
+.fencing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.fencing img {
+  width: 100%;
+  height: 100%;
+}
+
+.outdoors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.outdoors img {
+  width: 100%;
+  height: 100%;
+}
+
+.paintings {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.paintings img{
+  width: 100%;
+  height: 100%;
+}
+
+.travel {
+  
+}
+/*MODAL STUFF*/
