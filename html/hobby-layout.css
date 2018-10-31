@@ -13,46 +13,95 @@ body {
   width: 100%;
 }
 
+footer {  
+	align-items: center;
+	display: flex;
+	grid-column-start: 1;
+	justify-content: center;		
+}
+
+.modal-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(400px, auto);
+  grid-template-areas: 
+  "fencing climbing"
+  "painting archery "
+  "scuba cooking"
+  "outdoors .";
+}
+
 .modal-container img {
+  display: grid;
   max-height: 30%;
   max-width: 30%;
 }
 
-.fencing {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.pod {
+  border-style: solid;
+  border-color: black;
 }
 
-.fencing img {
-  width: 100%;
-  height: 100%;
+.archery {
+  grid-area: archery;
+}
+
+.climbing {
+  grid-area: climbing;
+}
+
+.cooking {
+  grid-area: cooking;
+}
+
+.fencing {
+  grid-area: fencing;
 }
 
 .outdoors {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
+ grid-area: outdoors;
+ /*display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: auto;
+ grid-template-areas: 
+ "oh oh"
+ "states countries"
+ "hiking ireland"
+ "op op";*/
 }
 
-.outdoors img {
-  width: 100%;
-  height: 100%;
+.oh {
+  grid-area: oh;
+}
+.states {
+  grid-area: states;
+  min-height: 100px;
+  max-width: 100px;
+}
+
+.countries {
+  grid-area: countries;
+}
+
+.hiking {
+  grid-area: hiking;
+}
+
+.ireland {
+  grid-area: ireland;
+}
+
+.op {
+  grid-area: op;
 }
 
 .paintings {
-  display: flex;
-  flex-wrap: wrap;
+ grid-area: paintings;
 }
 
-.paintings img{
-  width: 100%;
-  height: 100%;
-}
-
-.travel {
-  
+.scuba {
+  grid-area: scuba;
 }
 /*MODAL STUFF*/
 
@@ -64,21 +113,64 @@ body {
     top: 0;
     width: 100%; 
     height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
+    overflow: auto;  
 }
+
+.butterfly {
+  grid-area: butterfly;
+}
+
+.horsehead {
+  grid-area: horsehead;
+}
+
+.carina {
+  grid-area: carina;
+}
+
+.eagle {
+  grid-area: eagle;
+}
+
+.yosemite {
+  grid-area: yosemite;
+}
+
+.cart {
+  grid-area: cart;
+}
+
+.sunrise {
+  grid-area: sunrise;
+}
+
+.p {
+  grid-area: p;
+}
+
 
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; 
-    padding: 20px;
+  align-items: flex-start;
+    background-color: white;
+    border-color: black;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2;
+    grid-template-areas: 
+    "eagle carina"
+    "butterfly horsehead"
+    "yosemite cart"
+    "sunrise p";
+    justify-items: center;
+    margin: 2% auto; 
+    padding: 5px;
     border: 1px solid #888;
-    width: 100vh; 
+    width: 90vh; 
 }
 .modal-content img {
-  height: 200px;
-  width: 700px;
+ height: 100px;
+  width: 200px;
 }
 
 .close {

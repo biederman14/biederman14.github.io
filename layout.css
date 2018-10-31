@@ -13,9 +13,11 @@ body {
   width: 100%;
 }
 
-footer {
-  display: flex;
-  align-content: center;
+footer {  
+	align-items: center;
+	display: flex;
+	grid-column-start: 1;
+	justify-content: center;		
 }
 
 header {
